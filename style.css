@@ -1,0 +1,232 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Syne', sans-serif;
+    
+}
+
+/*customize the CSS styling for the menu */
+ul {
+   /* list-style-type: none;*/
+    margin: 0;
+    padding:0;
+    background-color: #000000;
+    text-align: initial;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul ul a {
+    padding: 10px 15px;
+}
+
+/* Add styles for the top-level menu items */
+ul > li > a {
+    border-bottom: 2px solid transparent;
+}
+
+ul > li:hover > a {
+    background-color: #555;
+}
+
+/* Add styles for the sub-menu items */
+ul ul > li > a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #666;
+    background-color: #444;
+    font-weight: normal;
+}
+
+ul ul > li:hover > a {
+    background-color: #555;
+}
+
+/* Banner section*/
+.container {
+    
+    color: white;
+     height:100px;
+     width:100%;
+    /* background:rgb(108, 106, 106) ;*/
+     /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
+     background-image: linear-gradient(to left, rgba(4, 1, 1, 0), rgb(227, 121, 23));
+     
+}
+    
+
+.h-text{
+    
+   margin-left: 45%;
+}
+.h-text2 {
+    margin-left: 47%;
+}
+
+.h-text3 {
+    margin-left: 45%;
+}
+ 
+.h-primary {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Syne', sans-serif;
+}
+
+.h-secondary {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.7 rem;
+}
+
+.services-container{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+
+}
+
+#services {
+    margin: 0px;
+    display: flex;
+    
+}
+
+#services .box {
+    border: 2px solid rgb(133, 10, 140);
+    padding: 15px;
+    margin: 25px 55px;
+    border-radius: 20px;
+    background-color: lightgrey;
+    
+    
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    
+    
+}
+
+#services .box p {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Syne', sans-serif;
+}
+
+
+/*Contact Section*/
+
+#contact {
+    position:relative;
+    margin-top: 0px;
+    color: white;
+}
+ 
+.form-group {
+color: white;
+}
+#contact::before {
+    content: "";
+    
+    /*background: url(/image/c-bg.jpg)no-repeat center center/cover;*/
+    background-image: linear-gradient(to right, rgb(90, 134, 212) , rgb(106, 121, 121));;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+   
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#contact-box form {
+    width: 40%;
+    border-radius: 5px;
+}
+
+#contact-box label {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Syne', sans-serif;
+}
+
+
+/* Utility class  */
+
+.h-primary {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 13px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Syne', sans-serif;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Syne', sans-serif;
+}
+
+.btn {
+    padding: 4px 18px;
+    margin: 15px;
+    border-radius: 12px;
+    border: 2px solid white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    cursor: pointer;
+    
+}
+
+.center {
+    text-align: center;
+}
